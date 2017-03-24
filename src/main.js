@@ -11,6 +11,10 @@ import VueResource from 'vue-resource'
 import goods from './components/tab/goods/goods.vue'
 import ratings from './components/tab//ratings/ratings.vue'
 import sellers from './components/tab/sellers/sellers.vue'
+<<<<<<< HEAD
+=======
+
+>>>>>>> 201703241800
 // 1.使用路由
 Vue.use(VueRouter)
 Vue.use(VueResource)

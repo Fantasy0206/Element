@@ -1,6 +1,10 @@
 <template>
   <div class="goods">
+<<<<<<< HEAD
     <div class="menu-wrapper">
+=======
+    <div class="menu-wrapper" ref:menu-wrapper>
+>>>>>>> 201703241800
       <ul>
         <li class="menu-item" v-for="item in goods">
           <span class="text">
@@ -9,7 +13,11 @@
         </li>
       </ul>
     </div>
+<<<<<<< HEAD
     <div class="foods-wrapper">
+=======
+    <div class="foods-wrapper" ref:food-wrapper>
+>>>>>>> 201703241800
       <ul>
         <li v-for = "item in goods" class="food-list">
           <h1 class="title">{{ item.name }}</h1>
@@ -40,6 +48,10 @@
 </template>
 
 <script>
+<<<<<<< HEAD
+=======
+import BScroll from 'better-scroll'
+>>>>>>> 201703241800
 const ERR_OK = 0
 export default {
   data () {
@@ -60,11 +72,26 @@ export default {
       response = response.body
       if (response.errno === ERR_OK) {
         this.goods = response.data
+<<<<<<< HEAD
+=======
+        this.$nextTick(() => {
+          this._initScroll()
+        })
+>>>>>>> 201703241800
       }
     }, response => {
       // error callback
       alert('erros')
     })
+<<<<<<< HEAD
+=======
+  },
+  methods: {
+    _initScroll: function () {
+      this.menuScroll = new BScroll(this.$refs.menuWrapper, {startX: 0, startY: 0})
+      this.foodScroll = new BScroll(this.$refs.foodWrapper, {startX: 0, startY: 0})
+    }
+>>>>>>> 201703241800
   }
 }
 </script>
