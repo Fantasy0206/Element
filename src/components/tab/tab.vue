@@ -14,6 +14,11 @@
 
 <script>
 export default{
+  props: {
+    sellers: {
+      type: Object
+    }
+  }
 }
 </script>
 
